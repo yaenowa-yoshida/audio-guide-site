@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー（草案） — 位置連動音声ガイド</title>
+<style>
+  :root {
+    --bg: #faf9f7; --fg: #1c1a17; --muted: #6b6560; --border: #d8d3cc; --accent: #2f4f3f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161513; --fg: #f2efea; --muted: #9c948c; --border: #3a3733; --accent: #5c8a6f; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.9; font-size: 16px;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 1.4rem; line-height: 1.5; }
+  h2 { font-size: 1.1rem; margin-top: 2.2rem; border-bottom: 1px solid var(--border); padding-bottom: .4rem; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: .9rem; }
+  .note {
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: .8rem 1rem; margin: 1.5rem 0; font-size: .95rem;
+  }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー（草案）</h1>
+
+  <div class="note">
+    本アプリは未公開です。この文書は公開に先立つ草案であり、
+    機能の追加・変更にあわせて改訂します。確定版はアプリ公開時に、
+    改訂履歴つきでこのページに掲示します。
+  </div>
+
+  <h2>1. 位置情報</h2>
+  <p>
+    本アプリは、現在地のまわりの話題を選び、距離と方角を読み上げるために
+    位置情報を利用します。この処理はすべて端末内で行われ、
+    <strong>本アプリが現在地・移動履歴を外部のサーバーへ送信することはありません</strong>。
+    本アプリには送信先となる自前のサーバーが存在しません。
+  </p>
+  <p class="muted">
+    なお、測位そのもの（GPS・Wi-Fi・基地局による位置推定）は OS が提供する仕組みを
+    利用しており、その過程で OS の提供元が通信を行うことがあります。これは本アプリの
+    制御の外にあり、各 OS 提供元のプライバシーポリシーが適用されます。
+  </p>
+
+  <h2>2. 音声の読み上げ</h2>
+  <p>
+    読み上げる文には現在地から計算した距離・方角が含まれます。このため本アプリは、
+    <strong>端末内で処理される音声合成だけ</strong>を使用します。端末内で合成されることが
+    確認できない場合、本アプリは読み上げを行いません。読み上げ文が音声合成の
+    事業者へ送られることはありません。
+  </p>
+
+  <h2>3. 端末内に保存するデータ</h2>
+  <p>
+    再生済みの話題の記録と、利用者が選んだ設定（移動手段など）を端末内にのみ
+    保存します。これらは端末の外に出ません。アプリ内の操作でいつでも削除できます。
+  </p>
+
+  <h2>4. 収集しないもの</h2>
+  <p>
+    本アプリは現時点で、アクセス解析・行動計測・広告の SDK を含みません。
+    アカウント登録もなく、氏名・連絡先等の個人情報を取得しません。
+    将来これらを導入する場合は、導入前に本ポリシーを改訂し、
+    収集内容・提供先・同意の方法を明記します。
+  </p>
+
+  <h2>5. お問い合わせ</h2>
+  <p class="muted">
+    準備中です。アプリ公開までに窓口を記載します。
+  </p>
+
+  <footer>
+    草案 v0.1 — 最終更新: 2026-08-04<br>
+    <a href="./index.html">トップへ戻る</a>
+  </footer>
+</main>
+</body>
+</html>

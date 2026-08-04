@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>位置連動音声ガイド（開発中・名称未定）</title>
+<style>
+  :root {
+    --bg: #faf9f7; --fg: #1c1a17; --muted: #6b6560; --border: #d8d3cc; --accent: #2f4f3f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161513; --fg: #f2efea; --muted: #9c948c; --border: #3a3733; --accent: #5c8a6f; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.9; font-size: 16px;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 1.5rem; line-height: 1.5; }
+  h2 { font-size: 1.15rem; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: .4rem; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: .9rem; }
+  .note {
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: .8rem 1rem; margin: 1.5rem 0; font-size: .95rem;
+  }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>位置連動音声ガイド<br><span class="muted">（開発中・名称未定）</span></h1>
+
+  <p>
+    現在地のまわりで起きた、教科書に出てくる水準の出来事を音声で伝える
+    モバイルアプリを開発しています。画面を見ずに使えることを前提に、
+    大人の学び直しに向けて作っています。まずは東京の 1 コースから始めます。
+  </p>
+
+  <div class="note">
+    このページは開発中アプリの公開情報ページです。アプリは未公開で、
+    名称は未定です。内容は今後変わります。
+  </div>
+
+  <h2>安全上の注意</h2>
+  <p>
+    本アプリは歩きながら聞くための案内であり、<strong>運転中の利用は想定していません</strong>。
+    利用中は操作や画面注視を求めない設計ですが、周囲の交通と足元には
+    常に注意を払ってください。案内の内容よりも現実の安全が優先です。
+  </p>
+
+  <h2>プライバシー</h2>
+  <p>
+    位置情報の扱いかたは <a href="./privacy.html">プライバシーポリシー（草案）</a> をご覧ください。
+    要点: 本アプリは現在地を外部へ送信せず、位置に基づく処理は端末内で完結します。
+  </p>
+
+  <h2>サポート・連絡先</h2>
+  <p class="muted">
+    準備中です。アプリ公開までに、問い合わせ窓口をこのページに記載します。
+  </p>
+
+  <footer>
+    最終更新: 2026-08-04
+  </footer>
+</main>
+</body>
+</html>
